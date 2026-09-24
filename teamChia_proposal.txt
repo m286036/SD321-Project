@@ -3,7 +3,7 @@ Team Members: Cayden Plese, Rachel Kim, Jonathan Skemp
 Team Leader: Rachel Kim
 
 Project Title: Student Performance Factors 
-Thesis Question: What controllable factors impact how a student performs in high school and college?
+Thesis Question: How can you optimize controllable factors to increase academic performance.
 
 Dataset: Student Exam Performance & Success Dataset
             -This csv file contains information about both high school and undergraduate students. It highlights their parents backgrounds as well as their own, and how this is
