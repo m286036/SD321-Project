@@ -4,7 +4,10 @@ Team Leader: Rachel Kim
 
 Student Performance Factors What controllable factors impact how a student performs in high school and college?
 
-
+Dataset: Student Exam Performance & Success Dataset
+            -This csv file contains information about both high school and undergraduate students. It highlights their parents backgrounds as well as their own, and how this is
+             impacting school performance. What is most interesting for our group is diving deeper into the uncontrollable/controllable factors like: number_of_practice_exams_taken,
+             motivation_level, attendence_percentage, and many more. With 44 columns and 100,000 rows we are excited to uncover the secrets behind student performance.
 
 
 
@@ -13,3 +16,4 @@ What single factor has the greatest impact?
 how is motivation level measured?
 Are private schools worth paying for? is there a positive impact?
 Does living in an urban vs Rural location affect how well a student performs?
+
