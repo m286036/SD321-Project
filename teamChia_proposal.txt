@@ -1,9 +1,9 @@
-TEAM Name
+teamChia
 Cayden Plese, Rachel Kim, Jonathan Skemp
 Team Leader: Rachel Kim
 
-Student Performance Factors What controllable factors impact how a student performs in high school and college?
-
+Project Title: Student Performance Factors 
+Big Question: What controllable factors impact how a student performs in high school and college?
 
 
 
