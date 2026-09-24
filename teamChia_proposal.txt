@@ -2,7 +2,8 @@ Team Name: teamChia
 Team Members: Cayden Plese, Rachel Kim, Jonathan Skemp
 Team Leader: Rachel Kim
 
-Student Performance Factors What controllable factors impact how a student performs in high school and college?
+Project Title: Student Performance Factors 
+Thesis Question: What controllable factors impact how a student performs in high school and college?
 
 Dataset: Student Exam Performance & Success Dataset
             -This csv file contains information about both high school and undergraduate students. It highlights their parents backgrounds as well as their own, and how this is
@@ -11,6 +12,8 @@ Dataset: Student Exam Performance & Success Dataset
 
 
 link: https://www.kaggle.com/datasets/mobeenfatimah/student-exam-performance-and-success-dataset 
+
+5 Questions
 
 How does parents background impact student performance?
 What single factor has the greatest impact?
