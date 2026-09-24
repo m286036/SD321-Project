@@ -1,15 +1,23 @@
-teamChia
-Cayden Plese, Rachel Kim, Jonathan Skemp
+Team Name: teamChia
+Team Members: Cayden Plese, Rachel Kim, Jonathan Skemp
 Team Leader: Rachel Kim
 
 Project Title: Student Performance Factors 
 Big Question: What controllable factors impact how a student performs in high school and college?
 
 
-
+link: https://www.kaggle.com/datasets/mobeenfatimah/student-exam-performance-and-success-dataset 
 
 How does parents background impact student performance?
 What single factor has the greatest impact?
 how is motivation level measured?
 Are private schools worth paying for? is there a positive impact?
 Does living in an urban vs Rural location affect how well a student performs?
+
+
+making powerpoint - Rachel
+writing code - Cayden
+making tables - Cayden
+drawing conclusions from graphs - Jonathan
+making graphs - Jonathan
+submitting milestones - Rachel
