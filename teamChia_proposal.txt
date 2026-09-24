@@ -3,7 +3,7 @@ Team Members: Cayden Plese, Rachel Kim, Jonathan Skemp
 Team Leader: Rachel Kim
 
 Project Title: Student Performance Factors 
-Thesis Question: How can you optimize controllable factors to increase academic performance.
+Thesis Question: What controllable factors impact how a student performs in high school and college?
 
 Dataset: Student Exam Performance & Success Dataset
             -This csv file contains information about both high school and undergraduate students. It highlights their parents backgrounds as well as their own, and how this is
@@ -21,3 +21,11 @@ how is motivation level measured?
 Are private schools worth paying for? is there a positive impact?
 Does living in an urban vs Rural location affect how well a student performs?
 
+Jonathan:
+Table Creation/Coding
+
+Cayden:
+Graph/Visualization/Interpretation
+
+Rachel:
+Submission/Powerpoint
