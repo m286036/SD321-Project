@@ -1,49 +1,67 @@
-CREATE TABLE Student_Factors (
+DROP TABLE IF EXISTS STUDENT;
+DROP TABLE IF EXISTS UNCONTROLLABLES;
+DROP TABLE IF EXISTS CONTROLLABLES;
+DROP TABLE IF EXISTS PERFORMANCE;
+
+CREATE TABLE STUDENT (
     student_id VARCHAR(50),
-    age INT,
     gender VARCHAR(50),
-    education VARCHAR(50),
+    CONSTRAINT PK_STUDENT PRIMARY KEY (student_id)
+);
+
+
+
+CREATE TABLE UNCONTROLLABLES (
+    student_id VARCHAR(50),
     school_type VARCHAR(50),
     family_income VARCHAR(50),
     parent_education VARCHAR(50),
     urban_rural VARCHAR(50),
-    previous_exam_score INT,
-    previous_gpa INT,
-    attendance_percentage INT,
-    assignment_completion_rate INT,
-    class_participation VARCHAR(50),
-    study_hours_per_day INT,
-    self_study_hours INT,
-    private_tuition BOOLEAN,
-    online_learning_hours INT,
-    study_consistency VARCHAR(50),
-    study_environment VARCHAR(50),
-    study_method VARCHAR(50),
+    internet_access BOOLEAN,
+    CONSTRAINT PK_studend_id PRIMARY KEY (student_id)
+    CONSTRAINT FK_UNCONTROLLABLES_STUDENT FOREIGN KEY (student_id)
+        REFERENCES Student(student_id)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE,
+);
+
+
+
+CREATE TABLE CONTROLLABLES (
+    student_id VARCHAR(50),
+    attendance_percentage FLOAT,
+    assignment_completion_rate FLOAT,
+    study_hours_per_day FLOAT,
+    self_study_hours FLOAT,
+    online_learning_hours FLOAT,
     revision_frequency VARCHAR(50),
     practice_tests_completed  INT,
-    notes_quality VARCHAR(50),
-    sleep_hours INT,
-    sleep_quality VARCHAR(50),
-    daily_screen_time INT,
-    physical_activity_hours,
-    break_frequency VARCHAR(50),
-    stress_level INT,
-    motivation_level VARCHAR(50),
-    internet_access BOOLEAN,
-    device_availability VARCHAR(50),
-    education_app_usage VARCHAR(50),
-    online_course_hours INT,
-    exam_difficulty VARCHAR(50),
+    sleep_hours FLOAT,
+    daily_screen_time FLOAT,
+    physical_activity_hours FLOAT,
+    CONSTRAINT PK_STUDENT PRIMARY KEY (student_id)
+    CONSTRAINT FK_CONTROLLABLES_STUDENT FOREIGN KEY (student_id)
+        REFERENCES Student(student_id)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE,
+);
+
+
+
+
+CREATE TABLE UNCONTROLLABLES (
+    student_id VARCHAR(50),
     exam_preparation_days INT,
-    questions_attempted INT,
-    questions_corrected INT,
-    time_management_score INT,
-    exam_anxiety_level INT,
     exam_score  INT,
     performance_grade VARCHAR(50),
     pass_status VARCHAR(50),
-    performance_level VARCHAR(50)
+    CONSTRAINT PK_STUDENT PRIMARY KEY (student_id)
+    CONSTRAINT FK_PERFORMANCE_STUDENT FOREIGN KEY (student_id)
+        REFERENCES Student(student_id)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE,
 );
+
 
 
 LOAD DATA INFILE '/sd212/SD321-Project/kaggledata.csv'
