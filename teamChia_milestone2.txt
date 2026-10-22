@@ -1,0 +1,14 @@
+1. The list of tables, with columns, and keys, resulting from translating the ER model to relational model;
+
+
+2. The functional dependencies for each table
+
+
+3. Whether each table is in BCNF or not
+
+
+4. If applicable, decomposition of tables in BCNF
+
+- to do:
+    - pca (this weekend)
+    - defining our "success" variable 
