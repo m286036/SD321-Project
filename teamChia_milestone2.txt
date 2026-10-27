@@ -1,14 +1,48 @@
 1. The list of tables, with columns, and keys, resulting from translating the ER model to relational model;
+STUDENT: student_id PK, gender 
 
+CONTROLLABLES: student_id PK, FK references STUDENT(student_id), 
+               assignment_completion_rate, study_hours_per_day, self_study_hours, online_learning_hours,
+               study_consistency, study_method, revision_frequency, practice_tests_done, sleep_hours, daily_screen_time, physical_activity_hours
+
+PERFORMANCE: student_id PK, FK references STUDENT(student_id), 
+             previous_exam_score, prep_days, exam_score, performance_grade, pass_status
+
+UNCONTROLLABLES: student_id PK, FK references STUDENT(student_id),
+                 family_income, parent_education, school_type, urban_rural, internet_access
 
 2. The functional dependencies for each table
+STUDENT:
+- student_id > gender
+
+CONTROLLABLES:
+- student_id > assignment_completion_rate
+- student_id > study_hours_per_day
+- student_id > self_study_hours
+- student_id > online_learning_hours
+- student_id > study_consistency
+- student_id > study_method
+- student_id > revision_frequency
+- student_id > practice_tests_done
+- student_id > sleep_hours
+- student_id > daily_screen_time
+- student_id > physical_activity_hours
+
+PERFORMANCE:
+- student_id > previous_exam_score
+- student_id > prep_days
+- student_id > exam_score
+- student_id > performance_grade
+- student_id > pass_status
+
+UNCONTROLLABLES
+- student_id > family_income
+- student_id > parent_education
+- student_id > school_type
+- student_id > urban_rural
+- student_id > internet_access
 
 
 3. Whether each table is in BCNF or not
+Each table is in BCNF. There are no functional dependencies. 
 
-
-4. If applicable, decomposition of tables in BCNF
-
-- to do:
-    - pca (this weekend)
-    - defining our "success" variable 
