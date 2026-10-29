@@ -44,5 +44,5 @@ UNCONTROLLABLES
 
 
 3. Whether each table is in BCNF or not
-Each table is in BCNF. There are no functional dependencies. 
+Each table is in BCNF. The table is in 3NF and there are no transitive dependencies. 
 
