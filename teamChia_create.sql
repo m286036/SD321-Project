@@ -62,34 +62,3 @@ CREATE TABLE PERFORMANCE (
         ON DELETE CASCADE
 );
 
-
-
-LOAD DATA INFILE '/sd212/SD321-Project/kaggledata.csv'
-INTO TABLE Student_Factors
-FIELDS TERMINATED BY ','
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE
-(   student_id, 
-    gender, 
-    education, 
-    school_type,
-    family_income,
-    parent_education,
-    urban_rural,
-    attendance_percentage,
-    assignment_completion_rate,
-    study_hours_per_day,
-    self_study_hours,
-    private_tuition,
-    online_learning_hours,
-    revision_frequency,
-    practice_tests_completed,
-    sleep_hours,
-    daily_screen_time,
-    physical_activity_hours,
-    internet_access,
-    exam_preparation_days,
-    exam_score,
-    performance_grade,
-    pass_status,);
