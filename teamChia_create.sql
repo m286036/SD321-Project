@@ -49,7 +49,7 @@ CREATE TABLE CONTROLLABLES (
 
 
 
-CREATE TABLE UNCONTROLLABLES (
+CREATE TABLE PERFORMANCE (
     student_id VARCHAR(50),
     exam_preparation_days INT,
     exam_score  INT,
