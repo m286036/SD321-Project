@@ -16,6 +16,7 @@ STUDENT:
 - student_id > gender
 
 CONTROLLABLES:
+- student_id > attendence_percentage
 - student_id > assignment_completion_rate
 - student_id > study_hours_per_day
 - student_id > self_study_hours
