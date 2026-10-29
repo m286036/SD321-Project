@@ -18,11 +18,11 @@ CREATE TABLE UNCONTROLLABLES (
     parent_education VARCHAR(50),
     urban_rural VARCHAR(50),
     internet_access BOOLEAN,
-    CONSTRAINT PK_studend_id PRIMARY KEY (student_id)
+    CONSTRAINT PK_student_id PRIMARY KEY (student_id),
     CONSTRAINT FK_UNCONTROLLABLES_STUDENT FOREIGN KEY (student_id)
-        REFERENCES Student(student_id)
+        REFERENCES STUDENT(student_id)
         ON UPDATE CASCADE
-        ON DELETE CASCADE,
+        ON DELETE CASCADE
 );
 
 
@@ -39,11 +39,11 @@ CREATE TABLE CONTROLLABLES (
     sleep_hours FLOAT,
     daily_screen_time FLOAT,
     physical_activity_hours FLOAT,
-    CONSTRAINT PK_STUDENT PRIMARY KEY (student_id)
+    CONSTRAINT PK_STUDENT PRIMARY KEY (student_id),
     CONSTRAINT FK_CONTROLLABLES_STUDENT FOREIGN KEY (student_id)
-        REFERENCES Student(student_id)
+        REFERENCES STUDENT(student_id)
         ON UPDATE CASCADE
-        ON DELETE CASCADE,
+        ON DELETE CASCADE
 );
 
 
@@ -55,11 +55,11 @@ CREATE TABLE UNCONTROLLABLES (
     exam_score  INT,
     performance_grade VARCHAR(50),
     pass_status VARCHAR(50),
-    CONSTRAINT PK_STUDENT PRIMARY KEY (student_id)
+    CONSTRAINT PK_STUDENT PRIMARY KEY (student_id),
     CONSTRAINT FK_PERFORMANCE_STUDENT FOREIGN KEY (student_id)
-        REFERENCES Student(student_id)
+        REFERENCES STUDENT(student_id)
         ON UPDATE CASCADE
-        ON DELETE CASCADE,
+        ON DELETE CASCADE
 );
 
 
